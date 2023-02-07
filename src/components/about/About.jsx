@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import ME from "../../assets/me.jpg";
+import ME from "../../assets/d.gif";
 import { FaAward } from "react-icons/fa";
 import { VscFolderLibrary } from "react-icons/vsc";
 const About = () => {
@@ -21,14 +21,14 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>0 Years </small>
+              <small>Fresher</small>
             </article>
 
             
               <article className='about__card'>
                 <FaAward className='about__icon' />
-                <h5>Experience</h5>
-                <small>0 Years </small>
+                <h5>Skills</h5>
+                <small></small>
               </article>
             
 
@@ -42,11 +42,7 @@ const About = () => {
             
             
           <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint
-            ducimus id error deserunt possimus neque architecto optio veniam,
-            quas, sit eligendi consectetur. Recusandae, enim quia deleniti
-            possimus, tempora quo animi earum voluptates, voluptas commodi
-            dolorum.
+          I am constantly seeking new challenges and opportunities to grow and develop. Currently, I am diving into the world of Full Stack Development, acquiring the skills needed to create websites using HTML, CSS, JavaScript, and React. My background in Mechanical Engineering has taught me the importance of problem-solving, critical thinking, and attention to detail, which I believe will serve me well in my new field. I am eager to put my skills to use and create dynamic, user-friendly websites that deliver exceptional user experiences.
           </p>
 
           <a href='#contact' className='btn btn-primary'>

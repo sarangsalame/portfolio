@@ -3,21 +3,21 @@ import "./contact.css";
 import { AiOutlineMail } from "react-icons/ai";
 import { ImWhatsapp } from "react-icons/im";
 
-import emailjs from "emailjs-com";
+
 const Contact = () => {
-  const form = useRef();
-  const sendEmail = (e) => {
-    e.preventDefault();
-    console.log("submitted");
-    emailjs
-      .sendForm(
-        "service_9bq191m",
-        "template_1iz154t",
-        form.current,
-        "tNHqA7GQhm5s_JSwr"
-      )
-      e.target.reset()
-  };
+  // const form = useRef();
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   console.log("submitted");
+  //   emailjs
+  //     .sendForm(
+  //       "service_9bq191m",
+  //       "template_1iz154t",
+  //       form.current,
+  //       "tNHqA7GQhm5s_JSwr"
+  //     )
+  //     e.target.reset()
+  // };
   return (
     <section id='contact' className='contact'>
       <h5>Get In Touch</h5>
@@ -46,7 +46,7 @@ const Contact = () => {
           </article>
         </div>
 
-        <form action='' onSubmit={sendEmail}>
+        <form action='https://getform.io/f/9e738b6c-1cc3-49b9-a5ed-1e0f2579b371' method="POST" >
           <input
             type='text'
             name='name'

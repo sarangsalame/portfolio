@@ -106,6 +106,9 @@ img{
   width: 100% ;
   object-fit: cover;
 }
+.iconed{
+  border-radius: 50%;
+}
 
 
 /* media queries for medium devices  tab */
