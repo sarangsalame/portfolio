@@ -28,7 +28,7 @@ const Protfolio = () => {
       
       <article className='portfolio__item'>
         <div className='portfolio__item-image'>
-        <img src={img2} alt="project image"/>
+        <img height= "130px" src={img2} alt="project image"/>
         </div>
         <h3>SpaceX Clone</h3>
         <div className='portfolio__item-cta'>
