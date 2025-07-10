@@ -11,7 +11,6 @@ import Portfolio from './components/portfolio/Protfolio'
 function App() {
   return (
     <>
-      
       <Header />
       <Navbar />
       <About />
