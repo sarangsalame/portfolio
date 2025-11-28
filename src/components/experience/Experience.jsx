@@ -2,6 +2,20 @@ import React from "react";
 import "./experience.css";
 import { BsPatchCheckFill } from "react-icons/bs";
 const Experience = () => {
+const frontendExp = [
+  { name: 'React.js', experience: '3+ years'},
+  { name: 'Next.js', experience: '3+ years'},
+  { name: 'Javascript', experience: '3+ years'},
+  { name: 'Tailwind', experience: '3+ years'},
+  { name: 'BootStrap', experience: '3+ years'},
+  { name: 'CSS', experience: '3+ years'},
+  { name: 'TypeScript', experience: '3+ years'},
+  ]
+const backendExp = [
+  { name: 'Node.js', experience: '1+ years'},
+  { name: 'Express.js', experience: '1+ years'},
+  { name: 'MongoDb', experience: '1+ years'},
+  ]
   return (
     <section id='experience' className='experience'>
       <h5>What Skills I Have</h5>
@@ -10,61 +24,30 @@ const Experience = () => {
         <div className='experience__frontend'>
           <h3>Frontend Development</h3>
           <div className='experience__content'>
-            <article className='experience__details'>
+            {frontendExp.map((item, ind)=>{
+              <article key={ind} className='experience__details'>
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-              <h4>HTML</h4>
-              <small className='text-light'>Experienced</small>
+              <h4>{item.name}</h4>
+              <small className='text-light'>{item.experience}</small>
               </div>
             </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4>CSS</h4>
-              <small className='text-light'>Intermediate</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4>JavaScript</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4>BootStrap</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4>Tailwind</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
-            <article className='experience__details'>
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-              <h4>React</h4>
-              <small className='text-light'>Experienced</small>
-              </div>
-            </article>
+            }}
           </div>
         </div>
 
         <div className='experience__backend'>
           <h3>Backend Development</h3>
           <div className='experience__content'>
-            <article className='experience__details'>
+            {backendExp.map((item, ind)=>{
+              <article key={ind} className='experience__details'>
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
-              <h4>Java</h4>
-              <small className='text-light'>Experienced</small>
+              <h4>{item.name}</h4>
+              <small className='text-light'>{item.experience}</small>
               </div>
             </article>
+            }}
           </div>
         </div>
       </div>
