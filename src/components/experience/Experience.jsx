@@ -16,6 +16,7 @@ const backendExp = [
   { name: 'Express.js', experience: '1+ years'},
   { name: 'MongoDb', experience: '1+ years'},
   ]
+  console.log(frontendExp.map((item, ind)=> item.name))
   return (
     <section id='experience' className='experience'>
       <h5>What Skills I Have</h5>
@@ -24,7 +25,7 @@ const backendExp = [
         <div className='experience__frontend'>
           <h3>Frontend Development</h3>
           <div className='experience__content'>
-            {frontendExp.map((item, ind)=>{
+            {frontendExp && frontendExp.map((item, ind)=>(
               <article key={ind} className='experience__details'>
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
@@ -32,14 +33,14 @@ const backendExp = [
               <small className='text-light'>{item.experience}</small>
               </div>
             </article>
-            }}
+            ))}
           </div>
         </div>
 
         <div className='experience__backend'>
           <h3>Backend Development</h3>
           <div className='experience__content'>
-            {backendExp.map((item, ind)=>{
+            {backendExp && backendExp.map((item, ind)=>( 
               <article key={ind} className='experience__details'>
               <BsPatchCheckFill className="experience__details-icon" />
               <div>
@@ -47,7 +48,7 @@ const backendExp = [
               <small className='text-light'>{item.experience}</small>
               </div>
             </article>
-            }}
+            ))}
           </div>
         </div>
       </div>
