@@ -21,18 +21,13 @@ const About = () => {
             <article className='about__card'>
               <FaAward className='about__icon' />
               <h5>Experience</h5>
-              <small>Fresher</small>
+              <small>3 Years and 3 Months</small>
             </article>
-
-            
               <article className='about__card'>
                 <FaAward className='about__icon' />
                 <h5>Skills</h5>
-                <small></small>
-              </article>
-            
-
-            
+                <small>Next.js, React.js, MERN, Tailwind, CI/CD</small>
+              </article>  
               <article className='about__card'>
                 <VscFolderLibrary className='about__icon' />
                 <h5>Projects</h5>
@@ -42,7 +37,7 @@ const About = () => {
             
             
           <p>
-          I am constantly seeking new challenges and opportunities to grow and develop. Currently, I am diving into the world of Full Stack Development, acquiring the skills needed to create websites using HTML, CSS, JavaScript, and React. My background in Mechanical Engineering has taught me the importance of problem-solving, critical thinking, and attention to detail, which I believe will serve me well in my new field. I am eager to put my skills to use and create dynamic, user-friendly websites that deliver exceptional user experiences.
+            <b>Frontend / MERN Stack Developer</b> with 3+ years of experience building scalable, high-performance web applications using MERN Stack. Specialized in UI performance optimization, reusable component architecture, responsive design, & API integrations. Proven ability to deliver user-centric interfaces, reduce load times, & collaborate in Agile environments.
           </p>
 
           <a href='#contact' className='btn btn-primary'>
